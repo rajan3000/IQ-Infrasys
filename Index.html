@@ -11,6 +11,7 @@
 
   <!-- Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
   <style>
     * { margin:0; padding:0; box-sizing:border-box; }
@@ -42,7 +43,7 @@
       box-shadow:0 2px 8px rgba(0,0,0,0.08);
       padding:15px;
       z-index:100;
-      text-align:center;
+      text-align:right;
     }
 
     nav a {
@@ -54,6 +55,19 @@
     }
 
     nav a:hover { color:var(--secondary); }
+
+    .main{
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .mainText p{
+      text-align: left;
+    }
+
+    .enquiry-box h2{
+      text-align: left;
+    }
 
     section { padding:70px 20px; max-width:1200px; margin:auto; }
 
@@ -93,8 +107,39 @@
       box-shadow:0 12px 30px rgba(0,0,0,0.12);
     }
 
-    ul { list-style:none; text-align:center; margin-top:20px; }
-    ul li { padding:8px 0; font-weight:500; }
+    ul{padding-left:18px;}
+    ul li{margin-bottom:10px;}
+
+    form{
+      max-width:520px;
+      background:#fff;
+      padding:30px;
+      border-radius:16px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    input, textarea{
+      width:100%;
+      padding:12px;
+      margin-bottom:14px;
+      border:1px solid #d1d5db;
+      border-radius:6px;
+      font-size:14px;
+    }
+
+    button{
+      background:var(--primary);
+      color:#fff;
+      padding:12px 20px;
+      border:none;
+      border-radius:6px;
+      font-size:14px;
+      cursor:pointer;
+    }
+
+    button:hover{
+      background:var(--secondary);
+    }
 
     .contact-box {
       background:linear-gradient(120deg, var(--secondary), var(--accent));
@@ -123,7 +168,7 @@
 
 <header>
   <h1>M/S IQ INFRASYS</h1>
-  <h3>Technology</h3>
+  <p>Technology</p>
   <p>Smart, Secure & Intelligent Infrastructure Solutions for Transportation, Urban Mobility and Enterprises</p>
 </header>
 
@@ -131,24 +176,34 @@
   <a href="#about">About</a>
   <a href="#solutions">Solutions</a>
   <a href="#expertise">Expertise</a>
-  <a href="#clients">Clients</a>
+  <a href="#enquiry">Enquiry</a>
   <a href="#contact">Contact</a>
 </nav>
 
 <section id="about">
   <h2>About Us</h2>
-  <p>IQ Infrasys is a leading system integrator delivering Intelligent Transportation Systems, Toll Management, Smart Parking, Data Centres, AV and Security solutions across India. We combine engineering excellence, innovation and reliability to create scalable, future-ready infrastructure.</p>
+  <div class="main">
+    <div class="mainText">
+      <p>IQ Infrasys is a trusted and fast-growing system integrator delivering advanced technology solutions across India. We specialize in Intelligent Transportation Systems (ITS), Toll Management Systems, Smart Parking Solutions, Data Centres, Audio-Visual Systems, and Integrated Security Solutions.
+With a strong foundation in engineering excellence and project execution, we design, integrate, and maintain mission-critical infrastructure that supports smart cities, highways, urban mobility, commercial complexes, and government projects. Our solutions are built to be scalable, reliable, and future-ready, ensuring long-term performance and value.
+At IQ Infrasys, innovation drives everything we do. We leverage the latest technologies, industry best practices, and trusted global partners to deliver solutions that enhance operational efficiency, safety, and data intelligence. From planning and design to installation, commissioning, and ongoing support, we offer end-to-end system integration services.
+Our experienced team of engineers and professionals is committed to quality, compliance, and timely delivery.</p>
+    </div>
+    <img src="t.jpg" width="600" height="350" alt="">
+  </div>  
 </section>
 
 <section id="solutions">
   <h2>Our Solutions</h2>
   <div class="grid">
-    <div class="card"><i class="fas fa-video"></i><h3>AV Solutions</h3></div>
-    <div class="card"><i class="fas fa-server"></i><h4>Data Centre Solutions</h4></div>
-    <div class="card"><i class="fas fa-network-wired"></i><h4>Network & OFC</h4></div>
-    <div class="card"><i class="fas fa-parking"></i><h4>Smart Parking</h4></div>
-    <div class="card"><i class="fas fa-camera"></i><h4>CCTV & Security</h4></div>
-    <div class="card"><i class="fas fa-road"></i><h4>Toll & ITS Systems</h4></div>
+    <div class="card"><i class="fas fa-video"></i><h3>AV Solutions</h3><p>Conference rooms, command centers and enterprise AV systems.</p></div>
+    <div class="card"><i class="fas fa-server"></i><h4>Data Centre Solutions</h4><p>Design, installation and commissioning.</p></div>
+    <div class="card"><i class="fas fa-network-wired"></i><h4>Network & OFC</h4><p>OFC laying, HDD, splicing and commissioning.</p></div>
+    <div class="card"><i class="fas fa-parking"></i><h4>Smart Parking</h4><p>Smart parking, ANPR Parking and FASTag Parking Integration.</p></div>
+    <div class="card"><i class="fas fa-camera"></i><h4>CCTV & Security</h4><p>CCTV Surveillance, VMS, ANPR CCTV and Access Control System Integration</p></div>
+    <div class="card"><i class="fas fa-road"></i><h4>Toll & ITS Systems</h4><p>ETC, HTMS, TMS and traffic enforcement and Urban Mobility & Toll Solutions.</p></div>
+    <div class="card"><i class="fas fa-hard-hat"></i><h4>Civil Works</h4><p>Toll Plaza Civil Construction, Trenching & Ducting Services and OFC Civil Works.</p></div>
+    <div class="card"><i class="fas fa-battery-full"></i><h4>UPS Systems</h4><p>UPS Installation, Testing & Commissioning and Power Continuity & Backup Solutions</p></div>
   </div>
 </section>
 
@@ -162,16 +217,17 @@
   </div>
 </section>
 
-<section id="clients">
-  <h2>Our Clients</h2>
-  <ul>
-    <li>Toll Man International Pvt. Ltd.</li>
-    <li>Park and Secure India Pvt. Ltd.</li>
-    <li>JAM Info Systems Pvt. Ltd.</li>
-    <li>Matrayee Construction Co.</li>
-    <li>Artnuma Pvt. Ltd.</li>
-    <li>Key Technocom</li>
-  </ul>
+<section id="enquiry">
+  <div class="enquiry-box">
+  <h2>Enquiry Us</h2>
+  <form method="post" action="contact.php">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="text" name="phone" placeholder="Phone Number">
+    <textarea name="message" rows="4" placeholder="Requirement / Enquiry"></textarea>
+    <button type="submit">Submit Enquiry</button>
+  </form>
+  </div>
 </section>
 
 <section id="contact">
