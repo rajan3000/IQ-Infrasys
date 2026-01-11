@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IQ Infrasys | Smart Infrastructure Solutions</title>
+  <meta name="description" content="IQ Infrasys – Intelligent Transportation Systems, Toll Management, Smart Parking, Data Centres, CCTV, AV Systems & Smart City solutions." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Poppins', sans-serif; color:#1f2937; background:#f8fafc; }
+
+    /* Brand Colors */
+    :root {
+      --primary:#0b3c5d;
+      --secondary:#1e88e5;
+      --accent:#00bfa6;
+      --light:#ffffff;
+    }
+
+    header {
+      background: linear-gradient(120deg, var(--primary), var(--secondary));
+      color:#fff;
+      padding:80px 20px;
+      text-align:center;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    header h1 { font-size:48px; font-weight:700; }
+    header h3 {font-size: 25px; font-weight: 400; }
+    header p { max-width:900px; margin:20px auto; font-size:18px; opacity:0.95; }
+
+    nav {
+      position:sticky; top:0;
+      background:#ffffff;
+      box-shadow:0 2px 8px rgba(0,0,0,0.08);
+      padding:15px;
+      z-index:100;
+      text-align:center;
+    }
+
+    nav a {
+      margin:0 18px;
+      text-decoration:none;
+      color:var(--primary);
+      font-weight:500;
+      transition:color 0.3s;
+    }
+
+    nav a:hover { color:var(--secondary); }
+
+    section { padding:70px 20px; max-width:1200px; margin:auto; }
+
+    h2 {
+      font-size:34px;
+      margin-bottom:20px;
+      color:var(--primary);
+      text-align:center;
+    }
+
+    section p { max-width:1000px; margin:0 auto 20px; text-align:center; }
+
+    .grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+      gap:25px;
+      margin-top:40px;
+    }
+
+    .card {
+      background:#ffffff;
+      padding:30px;
+      border-radius:16px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.06);
+      text-align:center;
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+
+    .card i {
+      font-size:40px;
+      color:var(--accent);
+      margin-bottom:15px;
+    }
+
+    .card:hover {
+      transform:translateY(-8px);
+      box-shadow:0 12px 30px rgba(0,0,0,0.12);
+    }
+
+    ul { list-style:none; text-align:center; margin-top:20px; }
+    ul li { padding:8px 0; font-weight:500; }
+
+    .contact-box {
+      background:linear-gradient(120deg, var(--secondary), var(--accent));
+      color:#fff;
+      padding:50px;
+      border-radius:20px;
+      text-align:center;
+      box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      background:#0b3c5d;
+      color:#fff;
+      text-align:center;
+      padding:25px;
+      margin-top:60px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity:0; transform:translateY(20px); }
+      to { opacity:1; transform:translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>M/S IQ INFRASYS</h1>
+  <h3>Technology</h3>
+  <p>Smart, Secure & Intelligent Infrastructure Solutions for Transportation, Urban Mobility and Enterprises</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#solutions">Solutions</a>
+  <a href="#expertise">Expertise</a>
+  <a href="#clients">Clients</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>IQ Infrasys is a leading system integrator delivering Intelligent Transportation Systems, Toll Management, Smart Parking, Data Centres, AV and Security solutions across India. We combine engineering excellence, innovation and reliability to create scalable, future-ready infrastructure.</p>
+</section>
+
+<section id="solutions">
+  <h2>Our Solutions</h2>
+  <div class="grid">
+    <div class="card"><i class="fas fa-video"></i><h3>AV Solutions</h3></div>
+    <div class="card"><i class="fas fa-server"></i><h4>Data Centre Solutions</h4></div>
+    <div class="card"><i class="fas fa-network-wired"></i><h4>Network & OFC</h4></div>
+    <div class="card"><i class="fas fa-parking"></i><h4>Smart Parking</h4></div>
+    <div class="card"><i class="fas fa-camera"></i><h4>CCTV & Security</h4></div>
+    <div class="card"><i class="fas fa-road"></i><h4>Toll & ITS Systems</h4></div>
+  </div>
+</section>
+
+<section id="expertise">
+  <h2>Domain Expertise</h2>
+  <div class="grid">
+    <div class="card"><i class="fas fa-charging-station"></i><h3>EV Charging Stations</h3></div>
+    <div class="card"><i class="fas fa-city"></i><h4>Smart City Modules</h4></div>
+    <div class="card"><i class="fas fa-traffic-light"></i><h4>Urban Traffic Management</h4></div>
+    <div class="card"><i class="fas fa-broadcast-tower"></i><h4>Radio Communication</h4></div>
+  </div>
+</section>
+
+<section id="clients">
+  <h2>Our Clients</h2>
+  <ul>
+    <li>Toll Man International Pvt. Ltd.</li>
+    <li>Park and Secure India Pvt. Ltd.</li>
+    <li>JAM Info Systems Pvt. Ltd.</li>
+    <li>Matrayee Construction Co.</li>
+    <li>Artnuma Pvt. Ltd.</li>
+    <li>Key Technocom</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <div class="contact-box">
+    <h2>Contact Us</h2>
+    <p><strong>IQ Infrasys</strong></p>
+    <p>Aaditya Puram, Gole Ka Mandir, Gwalior, MP – 474005</p>
+    <p>Email: iqinfrasys@gmail.com</p>
+    <p>Phone: +91 98277 17115 | +91 77371 26990</p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 IQ Infrasys. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
